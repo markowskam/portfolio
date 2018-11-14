@@ -1,0 +1,28 @@
+.c-header {
+    background-color: rgb(221, 197, 204);
+}
+
+.c-post__title {
+    color: green;
+}
+
+.container {
+    padding: 0 15px;
+    }
+
+.container.container--fluid { 
+width: 1200px;
+margin: auto;
+padding: 0 15px;
+}
+
+.c-header__img{
+    background-size: cover;
+    background-image: url('../img/front.jpg');
+    height: 509px;
+    color: pink;
+    width: 100%;
+}
+li a{
+    color: black;
+}
