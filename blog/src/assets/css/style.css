@@ -23,6 +23,7 @@ padding: 0 15px;
     color: pink;
     width: 100%;
 }
-li a{
-    color: black;
+li {
+    display: flex;
+    flex-direction: row;
 }

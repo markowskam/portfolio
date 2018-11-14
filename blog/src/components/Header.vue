@@ -12,7 +12,6 @@
             </ul> 
         </nav>
         <div class="c-header__img">
-            lllll
             <!-- <img src="../assets/img/front.jpg" alt=""> -->
         </div>
     </header>
