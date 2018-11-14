@@ -1,0 +1,42 @@
+/*********
+* Fonts *
+*********/
+/********** 
+* Colors *
+**********/
+/*********** 
+* Borders *
+***********/
+/************ 
+* Spacings *
+************/
+/**************
+* Grid *
+**************/
+/********
+* Misc *
+********/
+.container {
+  padding: 0 25px; }
+  .container--fluid {
+    width: 100%;
+    margin: auto;
+    padding: 0 15px; }
+    @media (min-width: 768px) {
+      .container--fluid {
+        max-width: 750px; } }
+    @media (min-width: 992px) {
+      .container--fluid {
+        max-width: 970px; } }
+    @media (min-width: 1200px) {
+      .container--fluid {
+        max-width: 1170px;
+        padding: 0; } }
+
+.c-header {
+  background-color: red; }
+  .c-header__img {
+    background-image: url("../img/front.jpg");
+    background-size: cover;
+    height: 509px;
+    width: 100%; }

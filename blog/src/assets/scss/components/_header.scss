@@ -1,0 +1,9 @@
+.c-header {
+    background-color: red;
+    &__img {
+        background-image: url('../img/front.jpg');
+        background-size: cover;
+        height: 509px;
+        width: 100%;
+    }
+} 
