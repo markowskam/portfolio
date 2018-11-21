@@ -9,7 +9,7 @@
 
 // // GENERIC
 @import "generic/reset";
-// @import "node_modules/inuitcss/generic/generic.normalize";
+@import "generic/box-sizing";
 // @import "node_modules/inuitcss/generic/generic.shared";
 
 // // ELEMENTS
@@ -31,7 +31,7 @@
 //COMPONENTS
 @import "components/header";
 @import "components/latest-post";
-// @import "components/components.page-foot";
+@import "components/newsletter";
 // @import "components/components.site-nav";
 // @import "components/components.ads";
 // @import "components/components.promo";

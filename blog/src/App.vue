@@ -2,10 +2,10 @@
   <div id="app">
     <div class="o-container">
       <app-header></app-header>
-      <main>
-        <router-view></router-view>
-      </main>
     </div>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 

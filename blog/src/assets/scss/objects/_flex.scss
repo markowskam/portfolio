@@ -5,14 +5,19 @@
     &--column {
         flex-direction: column;
     }
-    &--left {
+    &--left,
+    &--top {
         align-items: flex-start;
     }
-    &--center {
-        align-items: center;
-    }
-    &--right {
+    &--right,
+    &--bottom {
         align-items: flex-end;
+    }
+    &--center {
+        justify-content: center;
+    }
+    &--space-around {
+        justify-content: space-around;
     }
     &--justify {
         &-center {
@@ -31,4 +36,4 @@
     &--stretch {
         align-items: stretch;
     }
-} 
+}

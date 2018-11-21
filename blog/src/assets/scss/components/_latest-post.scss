@@ -10,10 +10,10 @@
             transition: all .8s ease-in-out;
             &:hover {
                 transform: scale(1.3);
-                opacity: 0.6;
+                opacity: 0.6; 
             }
-        }
-    }
+        } 
+    } 
     &__category {
         text-transform: uppercase;
         font-size: calculateRem(map-get($font,s));

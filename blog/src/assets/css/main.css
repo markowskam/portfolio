@@ -63,6 +63,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 /**
  * Simple page-level setup.
  *
@@ -104,14 +110,11 @@ a {
   transition: all .5s ease-in-out; }
 
 .o-container {
-  padding: 0 15px;
-  margin: 0; }
-  @media (min-width: 1200px) {
-    .o-container {
-      margin: 0 90px; } }
+  padding: 0 15px; }
   .o-container--fluid {
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    padding: 0 15px; }
     @media (min-width: 768px) {
       .o-container--fluid {
         max-width: 750px; } }
@@ -126,17 +129,21 @@ a {
 .o-grid-row {
   display: flex;
   flex-wrap: wrap; }
-  .o-grid-row > *:not(:nth-child(odd)) {
-    padding-left: 2%; }
-  .o-grid-row > *:not(:nth-child(even)) {
-    padding-right: 2%; }
+  @media (min-width: 992px) {
+    .o-grid-row > *:not(:nth-child(odd)) {
+      padding-left: 2%; } }
+  @media (min-width: 992px) {
+    .o-grid-row > *:not(:nth-child(even)) {
+      padding-right: 2%; } }
   .o-grid-row__item {
-    width: 100%; }
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 100%; }
     @media (min-width: 992px) {
       .o-grid-row__item {
-        flex: 0 0 48%;
-        max-width: 48%;
-        min-width: 48%; } }
+        flex: 0 0 50%;
+        max-width: 50%;
+        min-width: 50%; } }
 
 .o-flex {
   display: flex;
@@ -144,12 +151,14 @@ a {
   justify-content: space-between; }
   .o-flex--column {
     flex-direction: column; }
-  .o-flex--left {
+  .o-flex--left, .o-flex--top {
     align-items: flex-start; }
-  .o-flex--center {
-    align-items: center; }
-  .o-flex--right {
+  .o-flex--right, .o-flex--bottom {
     align-items: flex-end; }
+  .o-flex--center {
+    justify-content: center; }
+  .o-flex--space-around {
+    justify-content: space-around; }
   .o-flex--justify-center {
     justify-content: center; }
   .o-flex--justify-left {
@@ -201,3 +210,32 @@ a {
 
 .c-latest-post__text {
   padding-bottom: 8.125rem; }
+
+.c-newsletter {
+  background-color: #f0f0f0;
+  height: 18.125rem;
+  padding: 75px 0;
+  margin-bottom: 130px; }
+  .c-newsletter__content {
+    height: 100%; }
+  .c-newsletter__text {
+    font-size: 30px;
+    letter-spacing: 0.04688rem; }
+  .c-newsletter__form {
+    width: 33%;
+    position: relative; }
+    .c-newsletter__form::after {
+      content: "";
+      background-color: #626262;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      display: block;
+      bottom: 0; }
+  .c-newsletter__input {
+    border: none;
+    background-color: transparent;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    color: #626262;
+    width: 95%; }
