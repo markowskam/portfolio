@@ -4,23 +4,23 @@
 // @import "settings/settings.colors";
 
 // // TOOLS
-// @import "node_modules/sass-mq/mq";
-// @import "tools/tools.aliases";
+@import "tools/functions.scss";
+@import "tools/mixins";
 
 // // GENERIC
-// @import "node_modules/inuitcss/generic/generic.box-sizing";
+@import "generic/reset";
 // @import "node_modules/inuitcss/generic/generic.normalize";
 // @import "node_modules/inuitcss/generic/generic.shared";
 
 // // ELEMENTS
-// @import "node_modules/inuitcss/elements/elements.page";
+@import "elements/page";
 // @import "node_modules/inuitcss/elements/elements.headings";
 // @import "elements/elements.links";
 // @import "elements/elements.quotes";
 
 // // OBJECTS
-@import "objects/container";
-// @import "node_modules/inuitcss/objects/objects.media";
+@import "objects/grid";
+@import "objects/flex";
 // @import "node_modules/inuitcss/objects/objects.flag";
 // @import "node_modules/inuitcss/objects/objects.list-bare";
 // @import "node_modules/inuitcss/objects/objects.list-inline";
@@ -30,7 +30,7 @@
 
 //COMPONENTS
 @import "components/header";
-// @import "components/components.page-head";
+@import "components/latest-post";
 // @import "components/components.page-foot";
 // @import "components/components.site-nav";
 // @import "components/components.ads";

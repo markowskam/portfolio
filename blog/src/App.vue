@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <main class="container container--small">
-      <router-view></router-view>
-    </main>
+    <div class="o-container">
+      <app-header></app-header>
+      <main>
+        <router-view></router-view>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -15,8 +17,7 @@
       'app-header': Header,
     }
   }
-
 </script>
 
-<style scoped src="@/assets/css/main.css">
+<style src="@/assets/css/main.css">
 </style>

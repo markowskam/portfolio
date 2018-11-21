@@ -1,7 +1,7 @@
 <template>
-    <div class="latest-posts">
+    <div>
         <latest-post></latest-post>
-        <latest-posts-list></latest-posts-list>
+        <latest-posts-list class="o-container o-container--fluid"></latest-posts-list>
     </div>
 </template>
 

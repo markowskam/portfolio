@@ -1,0 +1,99 @@
+/*********
+* Fonts *
+*********/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=latin-ext');
+
+$htmlFontSize: 16px;
+$primaryFont: 'Playfair Display', serif;
+$secondaryFont: 'Ubuntu', sans-serif;
+$line-height: 24px;
+
+$font: (
+"xxs" : 12px, 
+"xs" : 13px, 
+"s" : 14px, 
+"m" : 16px, 
+"l" : 24px, 
+"xl" : 30px, 
+"xxl" : 34px, 
+"xxxl" : 48px
+); 
+ 
+/********** 
+* Colors *
+**********/
+$baseColors: (
+"main": (
+    #626262
+    #b4ad9e 
+),
+"sub": (
+   
+),
+"func": (
+    #fff
+    #f0f0f0
+    #333333
+    #000
+)
+); 
+
+$useColors: (
+"font" : (
+color-var(main),
+color-var(main,2),
+
+),
+"bg" : (
+
+
+), 
+"border" : (
+
+
+),
+"icon" : (
+
+)
+);
+
+/************ 
+* Spacings *
+************/
+
+$space: (
+    "xxxs" : 15px,
+    "xxs" : 35px,
+    "xs" : 40px,
+    "s" : 50px,
+    "m" : 65px,
+    "l" : 75px,
+    "xl" : 90px,
+    "xxl" : 130px,
+    "xxxl" : 375px,
+    );
+
+/**************
+* Grid *
+**************/
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 2000px;
+
+$screen-xs-max: $screen-sm-min - 1px;
+$screen-sm-max: $screen-md-min - 1px;
+$screen-md-max: $screen-lg-min - 1px;
+$screen-lg-max: $screen-xl-min - 1px;
+
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1170px;
+$container-xl: 1300px;
+
+/********
+* Misc *
+********/
+$transition-duration: 0.3s; 

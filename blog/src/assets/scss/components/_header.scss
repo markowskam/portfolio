@@ -1,9 +1,15 @@
 .c-header {
-    background-color: red;
-    &__img {
-        background-image: url('../img/front.jpg');
-        background-size: cover;
-        height: 509px;
-        width: 100%;
+     padding: calculateRem(map-get($space, l)) 0;
+     font-size: calculateRem(map-get($font, m));
+    &__item {
+        text-transform: uppercase;
+        padding: calculateRem(5px);
+        &:hover {
+            color: #fff;
+            background-color: #626262;
+        }
     }
-} 
+    &__logo {
+        width: calculateRem(119px);
+    } 
+}    

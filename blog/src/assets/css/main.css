@@ -1,12 +1,12 @@
+@charset "UTF-8";
 /*********
 * Fonts *
 *********/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=latin-ext");
 /********** 
 * Colors *
 **********/
-/*********** 
-* Borders *
-***********/
 /************ 
 * Spacings *
 ************/
@@ -16,27 +16,188 @@
 /********
 * Misc *
 ********/
-.container {
-  padding: 0 25px; }
-  .container--fluid {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Simple page-level setup.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+  min-height: 100%; }
+
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 24px;
+  color: color-var(font);
+  font-size: 14px; }
+
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  /* [3] */ }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all .5s ease-in-out; }
+
+.o-container {
+  padding: 0 15px;
+  margin: 0; }
+  @media (min-width: 1200px) {
+    .o-container {
+      margin: 0 90px; } }
+  .o-container--fluid {
     width: 100%;
-    margin: auto;
-    padding: 0 15px; }
+    margin: auto; }
     @media (min-width: 768px) {
-      .container--fluid {
+      .o-container--fluid {
         max-width: 750px; } }
     @media (min-width: 992px) {
-      .container--fluid {
+      .o-container--fluid {
         max-width: 970px; } }
     @media (min-width: 1200px) {
-      .container--fluid {
-        max-width: 1170px;
+      .o-container--fluid {
+        max-width: 1300px;
         padding: 0; } }
 
-.c-header {
-  background-color: red; }
-  .c-header__img {
-    background-image: url("../img/front.jpg");
-    background-size: cover;
-    height: 509px;
+.o-grid-row {
+  display: flex;
+  flex-wrap: wrap; }
+  .o-grid-row > *:not(:nth-child(odd)) {
+    padding-left: 2%; }
+  .o-grid-row > *:not(:nth-child(even)) {
+    padding-right: 2%; }
+  .o-grid-row__item {
     width: 100%; }
+    @media (min-width: 992px) {
+      .o-grid-row__item {
+        flex: 0 0 48%;
+        max-width: 48%;
+        min-width: 48%; } }
+
+.o-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .o-flex--column {
+    flex-direction: column; }
+  .o-flex--left {
+    align-items: flex-start; }
+  .o-flex--center {
+    align-items: center; }
+  .o-flex--right {
+    align-items: flex-end; }
+  .o-flex--justify-center {
+    justify-content: center; }
+  .o-flex--justify-left {
+    justify-content: flex-start; }
+  .o-flex--justify-right {
+    justify-content: flex-end; }
+  .o-flex--wrap {
+    flex-wrap: wrap; }
+  .o-flex--stretch {
+    align-items: stretch; }
+
+.c-header {
+  padding: 4.6875rem 0;
+  font-size: 1rem; }
+  .c-header__item {
+    text-transform: uppercase;
+    padding: 0.3125rem; }
+    .c-header__item:hover {
+      color: #fff;
+      background-color: #626262; }
+  .c-header__logo {
+    width: 7.4375rem; }
+
+.c-latest-post__img {
+  width: 100%; }
+
+.c-latest-post__img-box {
+  overflow: hidden;
+  position: relative;
+  background-color: #626262; }
+  .c-latest-post__img-box img {
+    transition: all .8s ease-in-out; }
+    .c-latest-post__img-box img:hover {
+      transform: scale(1.3);
+      opacity: 0.6; }
+
+.c-latest-post__category {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  padding-top: 4.6875rem;
+  display: inline-block; }
+
+.c-latest-post__title {
+  padding: 2.1875rem 0;
+  font-size: 1.875rem; }
+
+.c-latest-post__text {
+  padding-bottom: 8.125rem; }

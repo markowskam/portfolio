@@ -1,0 +1,8 @@
+@function calculateRem($size) {
+  $remSize: $size / $htmlFontSize;
+  @return #{$remSize}rem;
+}   
+
+// @function px-to-rem($target, $context: $htmlFontSize) {
+//   @return ($target / $context) * 1rem;
+// } 
