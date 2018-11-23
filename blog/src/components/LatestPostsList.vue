@@ -1,6 +1,6 @@
 <template>
     <div class="o-grid-row">
-        <div class="o-grid-row__item">
+        <div class="o-grid-row__item o-grid-row__item--half">
             <article class="c-latest-post">
                 <div class="c-latest-post__img-box">
                     <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
@@ -8,7 +8,7 @@
                     <a href="" class="c-latest-post__category">
                         Lifestyle
                     </a>
-                    <a href="">
+                    <router-link to="/post/:id" exact>
                         <h2 class="c-latest-post__title">
                             The perfect weekend getaway
                         </h2>
@@ -20,10 +20,10 @@
                             labore vero! Minima ipsum consequuntur amet.Lorem ipsum dolor sit amet consectetur adipisicing
                            
                         </p>
-                    </a>
+                   </router-link>
             </article>
         </div>
-        <div class="o-grid-row__item">
+        <div class="o-grid-row__item o-grid-row__item--half">
             <article class="c-latest-post">
                 <div class="c-latest-post__img-box">
                     <img class="c-latest-post__img" src="../assets/img/test.jpg" alt="">

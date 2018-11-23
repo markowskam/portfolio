@@ -1,0 +1,15 @@
+.c-banner {
+    padding-top: calculateRem(map-get($space , xl));
+    position: relative;
+    height: 300px;
+    &::before {
+        content: "banner";
+        background-color: #626262;
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+   
+}

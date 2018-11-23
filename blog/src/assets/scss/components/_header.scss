@@ -1,6 +1,7 @@
 .c-header {
-     padding: calculateRem(map-get($space, l)) 0;
      font-size: calculateRem(map-get($font, m));
+     margin-top: calculateRem(map-get($space, l));
+     margin-bottom: calculateRem(map-get($space, l));
     &__item {
         text-transform: uppercase;
         padding: calculateRem(5px);

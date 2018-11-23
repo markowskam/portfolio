@@ -1,5 +1,5 @@
 <template>
-    <header class="c-header">
+    <header class="c-header o-container o-container--fluid">
         <div class="o-grid-row">
             <div class="o-grid-row__item">
                 <router-link to="/" exact>

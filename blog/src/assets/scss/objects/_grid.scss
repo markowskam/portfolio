@@ -14,32 +14,48 @@
             max-width: $container-xl;
             padding: 0;
         } 
-    } 
+    }  
 } 
 
 .o-grid-row {
     display: flex;
     flex-wrap: wrap;
-    & > *:not(:nth-child(odd)) {
+    @media (min-width: $screen-md-min) {
+        flex-wrap: nowrap;
+    }
+    & > *:not(:first-child) {
         @media (min-width: $screen-md-min) {
             padding-left: 2%;
         }
     }
-    & > *:not(:nth-child(even)) {
+    & > *:not(:last-child) {
         @media (min-width: $screen-md-min) {
             padding-right: 2%;
         }
     }
     &__item {
-        flex: 0 0 100%;
-        max-width: 100%;
-        min-width: 100%;
-        @media (min-width: $screen-md-min) {
-            flex: 0 0 50%;
-            max-width: 50%;
-            min-width: 50%;
+        flex: 100%;
+        // margin-left: -2%;
+        &--2-1{
+            @media (min-width: $screen-md-min) {
+                flex: 0 0 50%;
+                max-width: 50%;
+                min-width: 50%;
+            }
         }
-     
-        
+        &--3-2{
+            @media (min-width: $screen-md-min) {
+                flex: 0 0 66.6%;
+                max-width: 66.6%;
+                min-width: 66.6%;
+            }
+        }
+        &--3-1{
+            @media (min-width: $screen-md-min) {
+                flex: 0 0 33.3%;
+                max-width: 33.3%;
+                min-width: 33.3%;
+            }
+        }
     }
 } 

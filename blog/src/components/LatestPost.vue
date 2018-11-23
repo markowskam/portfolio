@@ -7,7 +7,7 @@
       <a href="" class="c-latest-post__category">
         Lifestyle
       </a>
-      <a href="">
+      <router-link to="/post/:id">
         <h2 class="c-latest-post__title">
           The perfect weekend getaway
         </h2>
@@ -25,7 +25,7 @@
           amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
           dignissimos
         </p>
-      </a>
+      </router-link>
     </div>
   </article>
 </template>
@@ -33,5 +33,5 @@
 <script>
   export default {
 
-  }
+  } 
 </script>

@@ -3,7 +3,7 @@
 *********/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=latin-ext');
-
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">');
 $htmlFontSize: 16px;
 $primaryFont: 'Playfair Display', serif;
 $secondaryFont: 'Ubuntu', sans-serif;
@@ -17,7 +17,7 @@ $font: (
 "l" : 24px, 
 "xl" : 30px, 
 "xxl" : 34px, 
-"xxxl" : 48px
+"xxxl" : 48px 
 ); 
  
 /********** 
