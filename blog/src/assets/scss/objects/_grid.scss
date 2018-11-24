@@ -1,9 +1,9 @@
 .o-container {
-    padding: 0 map-get($space, xxxs);
+    padding: 0 $gutter-half;
     &--fluid {
         width: 100%;
         margin: auto;
-        padding: 0 map-get($space, xxxs);
+        // padding: 0 $gutter-half;
         @media (min-width: $screen-sm-min) {
             max-width: $container-sm;
         }
@@ -12,7 +12,7 @@
         }
         @media (min-width: $screen-lg-min) {
             max-width: $container-xl;
-            padding: 0;
+            // padding: 0;
         } 
     }  
 } 
@@ -20,22 +20,14 @@
 .o-grid-row {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -$gutter-half;
+    margin-left: -$gutter-half;
     @media (min-width: $screen-md-min) {
         flex-wrap: nowrap;
     }
-    & > *:not(:first-child) {
-        @media (min-width: $screen-md-min) {
-            padding-left: 2%;
-        }
-    }
-    & > *:not(:last-child) {
-        @media (min-width: $screen-md-min) {
-            padding-right: 2%;
-        }
-    }
     &__item {
         flex: 100%;
-        // margin-left: -2%;
+        padding: 0 $gutter-half;
         &--2-1{
             @media (min-width: $screen-md-min) {
                 flex: 0 0 50%;
@@ -55,7 +47,7 @@
                 flex: 0 0 33.3%;
                 max-width: 33.3%;
                 min-width: 33.3%;
-            }
+            } 
         }
     }
 } 

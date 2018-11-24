@@ -1,0 +1,7 @@
+.c-top-posts {
+    padding: calculateRem(map-get($space, m)) 0;
+    background-color: #f0f0f0; 
+    &__title {
+        text-transform: uppercase;
+    }
+}

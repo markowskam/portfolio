@@ -2,7 +2,7 @@
     <div>
         <latest-post></latest-post>
         <newsletter></newsletter>
-        <latest-posts-list class="o-container o-container--fluid"></latest-posts-list>
+        <latest-posts-list></latest-posts-list>
     </div>
 </template>
 

@@ -14,9 +14,9 @@
                     <li>
                         <router-link to="/posts/fashion" class="c-header__item" exact>Fashion</router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <router-link to="/posts/culture" class="c-header__item" exact>Culture</router-link>
-                    </li>
+                    </li> -->
                     <li>
                         <router-link to="/posts/architecture" class="c-header__item" exact>Architecture</router-link>
                     </li>

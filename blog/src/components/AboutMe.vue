@@ -19,14 +19,14 @@
                 </a>
             </div>
         </div>
-        <banner></banner>
+        <!-- <banner></banner> -->
     </aside>
 </template>
 <script>
-    import Banner from './Banner.vue'
+    // import Banner from './Banner.vue'
     export default {
-        components: {
-            'banner': Banner
-        }
+        // components: {
+        //     'banner': Banner
+        // }
     }
 </script>

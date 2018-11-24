@@ -1,10 +1,11 @@
 <template>
-    <div class="o-grid-row">
-        <div class="o-grid-row__item o-grid-row__item--half">
-            <article class="c-latest-post">
-                <div class="c-latest-post__img-box">
-                    <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
-                </div>
+    <div class="o-container o-container--fluid">
+        <div class="o-grid-row">
+            <div class="o-grid-row__item o-grid-row__item--half">
+                <article class="c-latest-post">
+                    <div class="c-latest-post__img-box">
+                        <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
+                    </div>
                     <a href="" class="c-latest-post__category">
                         Lifestyle
                     </a>
@@ -18,16 +19,16 @@
                             amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia
                             dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam,
                             labore vero! Minima ipsum consequuntur amet.Lorem ipsum dolor sit amet consectetur adipisicing
-                           
+
                         </p>
-                   </router-link>
-            </article>
-        </div>
-        <div class="o-grid-row__item o-grid-row__item--half">
-            <article class="c-latest-post">
-                <div class="c-latest-post__img-box">
-                    <img class="c-latest-post__img" src="../assets/img/test.jpg" alt="">
-                </div>
+                    </router-link>
+                </article>
+            </div>
+            <div class="o-grid-row__item o-grid-row__item--half">
+                <article class="c-latest-post">
+                    <div class="c-latest-post__img-box">
+                        <img class="c-latest-post__img" src="../assets/img/test.jpg" alt="">
+                    </div>
                     <a href="" class="c-latest-post__category">
                         Lifestyle
                     </a>
@@ -41,10 +42,11 @@
                             amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia
                             dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam,
                             labore vero! Minima ipsum consequuntur amet.Lorem ipsum dolor sit amet consectetur adipisicing
-                           
+
                         </p>
                     </a>
-            </article>
+                </article>
+            </div>
         </div>
     </div>
 </template>

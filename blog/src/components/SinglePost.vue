@@ -37,46 +37,26 @@
                         expedita mollitia dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis
                         ipsum laboriosam, labore vero! Minima ipsum consequuntur amet. Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium
-                        illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
+                        illum? Aut assumenda odio qui nobisum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
                         ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
                         dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima
-                        ipsum consequuntur amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa
-                        expedita mollitia dolorum perspiciatis dignissimos
+                        ipsum consequuntur amet.Lorem ipsum dolor si
                     </p>
                 </div>
                 <about-me></about-me>
             </div>
         </div>
-        <div class="c-top-posts">
-            <div class="o-container o-container--fluid">
-                <div class="o-grid-row">
-                    <div class="o-grid-row__item--3-1">
-                        <div class="c-top-posts__img-box">
-                            <img src="../assets/img/lifestyle_lazy_1.jpg" alt="" class="c-top-posts_img">
-                        </div>
-                    </div>
-                    <div class="o-grid-row__item--3-1">
-                        <div class="c-top-posts__img-box">
-                            <img src="../assets/img/lifestyle_lazy_1.jpg" alt="" class="c-top-posts_img">
-                        </div>
-                    </div>
-                    <div class="o-grid-row__item--3-1">
-                        <div class="c-top-posts__img-box">
-                            <img src="../assets/img/lifestyle_lazy_1.jpg" alt="" class="c-top-posts_img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <top-posts></top-posts>
     </article>
 </template>
 
 <script>
     import AboutMe from './AboutMe.vue'
+    import TopPosts from './TopPosts.vue'
     export default {
         components: {
-            'about-me': AboutMe
+            'about-me': AboutMe,
+            'top-posts': TopPosts
         }
     }
 </script>
