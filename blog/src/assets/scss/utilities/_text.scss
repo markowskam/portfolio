@@ -1,5 +1,14 @@
 .u-text {
-    &--upper {
-        text-transform: uppercase;
+    &--padded {
+        &-top {
+            &-xl {
+                padding-top: calculateRem(map-get($space, xl));
+            }
+        }
+        &-bottom {
+            &-xl {
+                padding-bottom: calculateRem(map-get($space, xl));
+            }
+        }
     }
-}
+} 

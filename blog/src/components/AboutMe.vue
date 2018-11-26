@@ -7,14 +7,14 @@
             <h2 class="c-about-me__title">About me</h2>
             <p class="c-about-me__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum ducimus obcaecati minus assumenda! Ab libero,
                 itaque animi vel magnam, cum nobis, reprehenderit nulla ex similique eligendi numquam velit cupiditate?</p>
-            <div class="c-about-me__social-media">
-                <a href="" class="c-about-me__social-icon">
+            <div class="c-social-icons o-flex o-flex--justify-right">
+                <a href="" class="c-social-icons__icon">
                    <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="c-about-me__social-icon">
+                <a href="" class="c-social-icons__icon">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="c-about-me__social-icon">
+                <a href="" class="c-social-icons__icon">
                     <i class="fab fa-pinterest-p"></i>
                 </a>
             </div>

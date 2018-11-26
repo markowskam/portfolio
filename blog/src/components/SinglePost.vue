@@ -5,7 +5,7 @@
         </div>
         <div class="o-container o-container--fluid">
             <div class="o-grid-row">
-                <div class="c-latest-post__content o-grid-row__item o-grid-row__item--3-2">
+                <div class="c-latest-post__content o-grid-row__item o-grid-row__item--3-2 u-text--padded-top-xl u-text--padded-bottom-xl">
                     <a href="" class="c-latest-post__category">
                         Lifestyle
                     </a>

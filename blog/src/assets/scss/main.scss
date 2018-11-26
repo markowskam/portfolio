@@ -29,6 +29,8 @@
 // @import "node_modules/inuitcss/objects/objects.table";
 
 //COMPONENTS
+@import "components/button";
+@import "components/social-icons";
 @import "components/header";
 @import "components/latest-post";
 @import "components/newsletter"; 
@@ -38,9 +40,10 @@
 @import "components/comments";
 @import "components/comment";
 @import "components/add-comment";
-@import "components/button";
+@import "components/footer";
+
 
 // // UTILITIES
-// @import "node_modules/inuitcss/utilities/utilities.widths";
+@import "utilities/text";
 // @import "node_modules/inuitcss/utilities/utilities.headings";
-// @import "node_modules/inuitcss/utilities/utilities.spacings";
+// @import "node_modules/inuitcss/utilities/utilities.spacings";  

@@ -1,0 +1,14 @@
+.c-footer {
+    height: 100px;
+    background-color: #f0f0f0;
+    &__content {
+        height: 100px;
+    }
+    &__conditions,
+    &__privacy {
+        margin-right: calculateRem(10px);
+        &:hover{
+          border-bottom: 1px solid black;
+        }
+    }
+} 

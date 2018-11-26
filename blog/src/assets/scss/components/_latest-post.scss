@@ -12,16 +12,19 @@
             &:hover {
                 transform: scale(1.3);
                 opacity: 0.6; 
-            }
+            } 
         } 
     } 
+    &__content {
+        padding-top: calculateRem(map-get($space, l));
+    }
     &__category {
         text-transform: uppercase;
         font-size: calculateRem(map-get($font,s));
         line-height: calculateRem(14px);
         font-family: $secondaryFont;
         font-weight: 300;
-        padding-top: calculateRem(map-get($space, l));
+        // padding-top: calculateRem(map-get($space, l));
         display: inline-block;
     }
     &__title {

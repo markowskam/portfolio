@@ -111,7 +111,7 @@ a {
   transition: all .5s ease-in-out; }
 
 .o-container {
-  padding: 0 20px; }
+  padding: 0 25px; }
   .o-container--fluid {
     width: 100%;
     margin: auto; }
@@ -128,14 +128,14 @@ a {
 .o-grid-row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px; }
+  margin-right: -25px;
+  margin-left: -25px; }
   @media (min-width: 992px) {
     .o-grid-row {
       flex-wrap: nowrap; } }
   .o-grid-row__item {
     flex: 100%;
-    padding: 0 20px; }
+    padding: 0 25px; }
     @media (min-width: 992px) {
       .o-grid-row__item--2-1 {
         flex: 0 0 50%;
@@ -177,6 +177,39 @@ a {
   .o-flex--stretch {
     align-items: stretch; }
 
+.c-button {
+  background-color: #626262;
+  padding: 5px 0.9375rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  border: 1px solid #626262;
+  transition: all .3s ease-in-out;
+  font-size: 0.875rem; }
+  .c-button:hover {
+    color: #626262;
+    background-color: #fff;
+    border: 1px solid #626262;
+    cursor: pointer; }
+
+.c-social-icons__icon {
+  display: block;
+  position: relative;
+  width: 1.875rem;
+  height: 1.875rem;
+  font-size: 1.5rem;
+  color: #626262;
+  transition: all .3s ease-in-out;
+  margin-left: 0.625rem; }
+  .c-social-icons__icon:hover {
+    transform: scale(1.3);
+    background-color: #626262;
+    color: #fff; }
+  .c-social-icons__icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .c-header {
   font-size: 1rem;
   margin-top: 4.6875rem;
@@ -203,13 +236,14 @@ a {
       .c-latest-post__img-box img:hover {
         transform: scale(1.3);
         opacity: 0.6; }
+  .c-latest-post__content {
+    padding-top: 4.6875rem; }
   .c-latest-post__category {
     text-transform: uppercase;
     font-size: 0.875rem;
     line-height: 0.875rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    padding-top: 4.6875rem;
     display: inline-block; }
   .c-latest-post__title {
     padding: 2.1875rem 0;
@@ -247,19 +281,10 @@ a {
     width: 95%; }
 
 .c-about-me {
-  padding-top: 4.6875rem; }
+  padding-top: 5.625rem; }
   .c-about-me__title {
     font-size: 1.5rem;
     padding: 2.1875rem 0; }
-  .c-about-me__social-icon {
-    display: inline-block;
-    font-size: 1.5rem;
-    color: #626262;
-    margin: 2.1875rem 1.09375rem;
-    margin-left: 0;
-    transition: transform .3s ease-in-out; }
-    .c-about-me__social-icon:hover {
-      transform: scale(1.3); }
 
 .c-banner {
   padding-top: 5.625rem;
@@ -336,16 +361,18 @@ a {
   right: 0;
   bottom: 0.9375rem; }
 
-.c-button {
-  background-color: #626262;
-  padding: 5px 0.9375rem;
-  color: #fff;
-  font-family: "Playfair Display", serif;
-  border: 1px solid #626262;
-  transition: all .3s ease-in-out;
-  font-size: 0.875rem; }
-  .c-button:hover {
-    color: #626262;
-    background-color: #fff;
-    border: 1px solid #626262;
-    cursor: pointer; }
+.c-footer {
+  height: 100px;
+  background-color: #f0f0f0; }
+  .c-footer__content {
+    height: 100px; }
+  .c-footer__conditions, .c-footer__privacy {
+    margin-right: 0.625rem; }
+    .c-footer__conditions:hover, .c-footer__privacy:hover {
+      border-bottom: 1px solid black; }
+
+.u-text--padded-top-xl {
+  padding-top: 5.625rem; }
+
+.u-text--padded-bottom-xl {
+  padding-bottom: 5.625rem; }
