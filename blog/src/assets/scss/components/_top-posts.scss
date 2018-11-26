@@ -1,7 +1,15 @@
 .c-top-posts {
-    padding: calculateRem(map-get($space, m)) 0;
+    padding: calculateRem(map-get($space, xxs)) 0;
     background-color: #f0f0f0; 
-    &__title {
+    &__header {
         text-transform: uppercase;
+        font-size: calculateRem(map-get($font, m));
+        font-family: $secondaryFont;
+        padding: calculateRem(map-get($space, s)) 0;
     }
-}
+    &__title {
+        padding: calculateRem(map-get($space, xxs)) 0;
+        font-size: calculateRem(map-get($font, l));
+        
+    }
+} 

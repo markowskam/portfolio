@@ -19,7 +19,7 @@
     font-family: $primaryFont;
     line-height: $line-height;
     color: color-var(font);
-    font-size: map-get($font, s);
+    font-size: map-get($font, m);
   }
  
   /**

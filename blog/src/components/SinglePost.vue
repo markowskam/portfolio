@@ -47,16 +47,19 @@
             </div>
         </div>
         <top-posts></top-posts>
+        <comments></comments>
     </article>
 </template>
 
 <script>
     import AboutMe from './AboutMe.vue'
     import TopPosts from './TopPosts.vue'
+    import Comments from './Comments.vue'
     export default {
         components: {
             'about-me': AboutMe,
-            'top-posts': TopPosts
+            'top-posts': TopPosts,
+            'comments': Comments
         }
     }
 </script>

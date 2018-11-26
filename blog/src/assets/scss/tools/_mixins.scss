@@ -1,4 +1,10 @@
-// @mixin fontSize($size) {
-//     font-size: $size; //Fallback in px
-//     font-size: calculateRem($size);
-//   }
+@mixin form-item-focus {
+    display: inline-block;
+    margin: calculateRem(map-get($space, xxxs)) 0;
+    padding: 15px calculateRem(map-get($space, xxxs)); 
+    outline-width: 0;
+    &:focus {
+        border: 1px solid #626262;
+        background-color: #f0f0f0;
+    } 
+}

@@ -90,7 +90,7 @@ body {
   font-family: "Playfair Display", serif;
   line-height: 24px;
   color: color-var(font);
-  font-size: 14px; }
+  font-size: 16px; }
 
 /**
  * 1. Fluid images for responsive purposes.
@@ -274,7 +274,78 @@ a {
     height: 100%; }
 
 .c-top-posts {
-  padding: 4.0625rem 0;
+  padding: 2.1875rem 0;
   background-color: #f0f0f0; }
+  .c-top-posts__header {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    padding: 3.125rem 0; }
   .c-top-posts__title {
+    padding: 2.1875rem 0;
+    font-size: 1.5rem; }
+
+.c-comments {
+  padding: 8.125rem 0; }
+  .c-comments__header {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
     text-transform: uppercase; }
+
+.c-comment {
+  padding: 2.5rem 0; }
+  .c-comment__content {
+    padding-bottom: 4.0625rem; }
+  .c-comment__name {
+    font-weight: bold; }
+
+.c-add-comment__link {
+  letter-spacing: 0.04688rem;
+  margin-bottom: 0.9375rem;
+  display: inline-block; }
+
+.c-add-comment__comment {
+  width: 100%;
+  display: inline-block;
+  margin: 0.9375rem 0;
+  padding: 15px 0.9375rem;
+  outline-width: 0; }
+  .c-add-comment__comment:focus {
+    border: 1px solid #626262;
+    background-color: #f0f0f0; }
+  .c-add-comment__comment::placeholder {
+    font-family: "Playfair Display", serif; }
+
+.c-add-comment__nick {
+  display: inline-block;
+  margin: 0.9375rem 0;
+  padding: 15px 0.9375rem;
+  outline-width: 0; }
+  .c-add-comment__nick:focus {
+    border: 1px solid #626262;
+    background-color: #f0f0f0; }
+  .c-add-comment__nick::placeholder {
+    font-family: "Playfair Display", serif; }
+
+.c-add-comment__form {
+  position: relative;
+  padding-bottom: 4.0625rem; }
+
+.c-add-comment__button {
+  position: absolute;
+  right: 0;
+  bottom: 0.9375rem; }
+
+.c-button {
+  background-color: #626262;
+  padding: 5px 0.9375rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  border: 1px solid #626262;
+  transition: all .3s ease-in-out;
+  font-size: 0.875rem; }
+  .c-button:hover {
+    color: #626262;
+    background-color: #fff;
+    border: 1px solid #626262;
+    cursor: pointer; }

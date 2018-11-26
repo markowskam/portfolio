@@ -1,0 +1,9 @@
+.c-comment {
+    padding: calculateRem(map-get($space, xs)) 0;
+    &__content {
+        padding-bottom: calculateRem(map-get($space, m));
+    }
+    &__name {
+        font-weight: bold;
+    }
+}

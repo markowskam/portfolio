@@ -1,0 +1,15 @@
+.c-button {
+    background-color:#626262;
+    padding: 5px calculateRem(map-get($space, xxxs));
+    color: #fff;
+    font-family: $primaryFont;
+    border: 1px solid #626262;
+    transition: all .3s ease-in-out;
+    font-size: calculateRem(map-get($font, s));
+    &:hover {
+        color: #626262;
+        background-color: #fff;
+        border: 1px solid #626262;
+        cursor: pointer;
+    }
+}  

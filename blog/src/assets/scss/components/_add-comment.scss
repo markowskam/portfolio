@@ -1,0 +1,29 @@
+.c-add-comment {
+    &__link {
+        letter-spacing: calculateRem(.75px);
+        margin-bottom: calculateRem(map-get($space, xxxs));
+        display: inline-block;
+    }
+    &__comment{
+        width: 100%;
+        @include form-item-focus;
+        &::placeholder {
+            font-family: $primaryFont;
+        } 
+    }
+    &__nick {
+        @include form-item-focus;
+        &::placeholder {
+            font-family: $primaryFont;
+        } 
+    }
+    &__form {
+        position: relative;
+        padding-bottom: calculateRem(map-get($space,  m));
+    }
+    &__button {
+        position: absolute;
+        right: 0;
+        bottom: calculateRem(map-get($space, xxxs));
+    }
+} 

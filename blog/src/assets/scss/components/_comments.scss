@@ -1,0 +1,8 @@
+.c-comments{
+    padding: calculateRem(map-get($space, xxl)) 0;
+    &__header {
+        font-family: $secondaryFont;
+        font-size: calculateRem(map-get($font, m));
+        text-transform: uppercase;
+    }
+}   
