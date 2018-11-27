@@ -1,0 +1,14 @@
+.c-about-me {
+    padding-top: 0;
+    padding-bottom: calculateRem(map-get($space, xl));
+    @media (min-width: $screen-md-min) {
+        padding-top: calculateRem(map-get($space, xl));  
+    }
+    &__title {
+        font-size: calculateRem(map-get($font, l));
+        padding: calculateRem(map-get($space, xxs)) 0;
+    }
+    &__description {
+        padding-bottom: calculateRem(map-get($space, xxs));
+    }
+}     

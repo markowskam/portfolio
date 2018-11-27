@@ -1,7 +1,0 @@
-.c-about-me {
-    padding-top: calculateRem(map-get($space, xl));
-    &__title {
-        font-size: calculateRem(map-get($font, l));
-        padding: calculateRem(map-get($space, xxs)) 0;
-    }
-}     

@@ -12,7 +12,7 @@
           <div class="c-footer__content o-flex">
             <div class="c-footer__documents">
               <a class="c-footer__conditions" href="#">Terms and conditions</a>
-              <a class="c-footer__privacy"href="#">Privacy</a>
+              <a class="c-footer__privacy" href="#">Privacy</a>
             </div>
             <div class="c-footer__social-media o-flex">
               <div class="c-footer__text">Follow</div>

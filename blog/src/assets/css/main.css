@@ -281,10 +281,16 @@ a {
     width: 95%; }
 
 .c-about-me {
-  padding-top: 5.625rem; }
+  padding-top: 0;
+  padding-bottom: 5.625rem; }
+  @media (min-width: 992px) {
+    .c-about-me {
+      padding-top: 5.625rem; } }
   .c-about-me__title {
     font-size: 1.5rem;
     padding: 2.1875rem 0; }
+  .c-about-me__description {
+    padding-bottom: 2.1875rem; }
 
 .c-banner {
   padding-top: 5.625rem;
@@ -311,7 +317,7 @@ a {
     font-size: 1.5rem; }
 
 .c-comments {
-  padding: 8.125rem 0; }
+  padding-top: 8.125rem; }
   .c-comments__header {
     font-family: "Ubuntu", sans-serif;
     font-size: 1rem;
@@ -362,14 +368,28 @@ a {
   bottom: 0.9375rem; }
 
 .c-footer {
-  height: 100px;
+  height: 6.25rem;
   background-color: #f0f0f0; }
   .c-footer__content {
-    height: 100px; }
+    height: 6.25rem; }
   .c-footer__conditions, .c-footer__privacy {
-    margin-right: 0.625rem; }
-    .c-footer__conditions:hover, .c-footer__privacy:hover {
-      border-bottom: 1px solid black; }
+    margin-right: 0.625rem;
+    position: relative; }
+    .c-footer__conditions:hover::before, .c-footer__privacy:hover::before {
+      display: block;
+      right: 0; }
+    .c-footer__conditions::before, .c-footer__privacy::before {
+      content: "";
+      position: absolute;
+      display: none;
+      background-color: black;
+      width: 100%;
+      height: 1px;
+      top: 100%; }
+  .c-footer__text {
+    height: 1.875rem;
+    vertical-align: middle;
+    line-height: 1.875rem; }
 
 .u-text--padded-top-xl {
   padding-top: 5.625rem; }
