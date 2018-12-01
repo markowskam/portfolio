@@ -25,7 +25,7 @@
     @media (min-width: $screen-md-min) {
         flex-wrap: nowrap;
     }
-    &__item {
+    &__item { 
         flex: 100%;
         padding: 0 $gutter-half;
         &--2-1{

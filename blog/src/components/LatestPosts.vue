@@ -2,7 +2,7 @@
     <div>
         <latest-post :category="category"></latest-post>
         <newsletter></newsletter>
-        <latest-posts-list></latest-posts-list>
+        <latest-posts-list :category="category"></latest-posts-list>
     </div>
 </template>
 

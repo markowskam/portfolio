@@ -8,7 +8,7 @@
         <a href="" class="c-latest-post__category">
           {{latestPost.category}}
         </a>
-        <router-link to="'/post/:id">
+        <router-link :to="`/post/${latestPost.id}`">
           <h2 class="c-latest-post__title">
             {{latestPost.title}}
           </h2>
