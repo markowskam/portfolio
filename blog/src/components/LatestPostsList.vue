@@ -57,7 +57,10 @@
 <script>
     export default {
         props: {
-            category: String
+      category: {
+        type: String,
+        default: null
+      }
         },
         computed: {
             latestPostsPairs() {

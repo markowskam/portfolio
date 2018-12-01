@@ -1,5 +1,5 @@
 <template>
-  <article class="c-latest-post">
+  <article class="c-latest-post" v-if="latestPost">
     <div class="o-container">
       <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
     </div>
@@ -24,11 +24,14 @@
 <script>
   export default {
     props: {
-      category: String
+      category: {
+        type: String,
+        default: null
+      }
     },
     computed: {
       latestPost() {
-        let categoryPosts = this.$store.getters.sortedAllPosts.filter(post => 
+        let categoryPosts = this.$store.getters.sortedAllPosts.filter(post =>
           post.category === this.category || this.category == null
         );
         return categoryPosts[categoryPosts.length - 1]

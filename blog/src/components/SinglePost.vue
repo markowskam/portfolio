@@ -1,5 +1,5 @@
 <template>
-    <article class="c-latest-post">
+    <article class="c-latest-post" v-if="singlePost">
         <div class="o-container o-container--fluid">
             <img class="c-latest-post__img" src="../assets/img/lifestyle_lazy_1.jpg" alt="">
         </div>
@@ -13,38 +13,10 @@
                        {{singlePost.title}}
                     </h2>
                     <p class="c-latest-post__text">
-                        {{sinlePost.brief}}
-                        elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis
-                        ipsum laboriosam, labore vero! Minima ipsum consequuntur amet. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium
-                        illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-                        dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima
-                        ipsum consequuntur amet.Lorem
+                        {{singlePost.brief}}
                     </p>
                     <p class="c-latest-post__text">
                         {{singlePost.text}}
-                        elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis
-                        ipsum laboriosam, labore vero! Minima ipsum consequuntur amet. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium
-                        illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-                        dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima
-                        ipsum consequuntur amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa
-                        expedita mollitia dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis
-                        ipsum laboriosam, labore vero! Minima ipsum consequuntur amet. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium
-                        illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-                        dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima
-                        ipsum consequuntur amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa
-                        expedita mollitia dolorum perspiciatis dignissimos accusantium illum? Aut assumenda odio qui nobis
-                        ipsum laboriosam, labore vero! Minima ipsum consequuntur amet. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos accusantium
-                        illum? Aut assumenda odio qui nobisum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-                        dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima
-                        ipsum consequuntur amet.Lorem ipsum dolor si
                     </p>
                 </div>
                 <about-me></about-me>
@@ -71,9 +43,9 @@
             }
         },
         computed: {
-            // singlePost() {
-            //     // return this.$store.state.allPosts.find(post => post.id === this.id);
-            // }
+            singlePost() {
+                return this.$store.state.allPosts.find(post => post.id === this.id);
+            }
         }
 
     }
