@@ -14,7 +14,9 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
-        fetchAllPosts({ commit }) {
+        fetchAllPosts({
+            commit
+        }) {
             return new Promise((resolve) => {
                 Vue.http.get("https://portfolio-blog-c7083.firebaseio.com/posts.json")
                     .then((response) => {
@@ -26,18 +28,16 @@ export const store = new Vuex.Store({
                         //console.log(error.statusText);
                     }));
             });
+        }
+    },
+    getters: {
+        sortedAllPosts(state) {
+            var comparePost = function (a, b) {
+                return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0);
+            }
+            return state.allPosts.sort(comparePost);
+        }
     }
-},
-getters: {
-    getCategories(state) {
-        let posts = state.allPosts;
-        let categories = [];
-        posts.forEach(element => {
-            categories.push(element.category)
-
-        });
-    }
-}
 
 });
 

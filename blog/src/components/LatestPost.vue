@@ -36,6 +36,11 @@
   export default {
     props: {
       category: String
+    },
+    computed: {
+      latestPost() {
+         return this.$store.state.allPosts;
+      }
     }
   }
 </script>
