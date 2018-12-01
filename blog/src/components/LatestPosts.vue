@@ -7,15 +7,20 @@
 </template>
 
 <script>
-import LatestPost from './LatestPost.vue'
-import LatestPostsList from './LatestPostsList.vue'
-import Newsletter from './Newsletter.vue'
+    import LatestPost from './LatestPost.vue'
+    import LatestPostsList from './LatestPostsList.vue'
+    import Newsletter from './Newsletter.vue'
 
-export default {
-      components: {
-      'latest-post': LatestPost,
-      'latest-posts-list': LatestPostsList,
-      'newsletter': Newsletter
+    export default {
+        components: {
+            'latest-post': LatestPost,
+            'latest-posts-list': LatestPostsList,
+            'newsletter': Newsletter
+        },
+        props: {
+            category: {
+                type: String
+            }
+        }
     }
-}
 </script>

@@ -8,7 +8,7 @@
         <a href="" class="c-latest-post__category">
           Lifestyle
         </a>
-        <router-link to="/post/:id">
+        <router-link to="'/post/:id">
           <h2 class="c-latest-post__title">
             The perfect weekend getaway
           </h2>
@@ -34,6 +34,8 @@
 
 <script>
   export default {
-
+    props: {
+      category: String
+    }
   }
 </script>

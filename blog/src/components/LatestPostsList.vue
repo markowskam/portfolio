@@ -10,7 +10,7 @@
                         <a href="" class="c-latest-post__category">
                             Lifestyle
                         </a>
-                        <router-link to="/post/:id" exact>
+                        <router-link to="'/post/' + latestPost.id" exact>
                             <h2 class="c-latest-post__title">
                                 The perfect weekend getaway
                             </h2>
@@ -27,7 +27,7 @@
                     </div>
                 </article>
             </div>
-            <div class="o-grid-row__item o-grid-row__item--half">
+            <!-- <div class="o-grid-row__item o-grid-row__item--half">
                 <article class="c-latest-post">
                     <div class="c-latest-post__img-box">
                         <img class="c-latest-post__img" src="../assets/img/test.jpg" alt="">
@@ -52,7 +52,7 @@
                         </a>
                     </div>
                 </article>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

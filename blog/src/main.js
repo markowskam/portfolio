@@ -4,6 +4,7 @@ import * as firebase from 'firebase'
 import {store} from './store/store'
 import VueRouter from 'vue-router'
 import Routes from './routes'
+import VueResource from 'vue-resource'
 
  // Initialize Firebase
  const config = {
@@ -26,6 +27,8 @@ const router = new VueRouter({
     mode: "history"
   });
 
+//Http requests
+Vue.use(VueResource)
 
 Vue.config.productionTip = false
 
