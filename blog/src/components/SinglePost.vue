@@ -71,9 +71,9 @@
             }
         },
         computed: {
-            singlePost() {
-                return this.$store.state.allPosts.find(post => post.id === this.id);
-            }
+            // singlePost() {
+            //     // return this.$store.state.allPosts.find(post => post.id === this.id);
+            // }
         }
 
     }

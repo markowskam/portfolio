@@ -6,25 +6,14 @@
     <div class="o-container o-container--fluid">
       <div class="c-latest-post__content">
         <a href="" class="c-latest-post__category">
-          Lifestyle
+          {{latestPost.category}}
         </a>
         <router-link to="'/post/:id">
           <h2 class="c-latest-post__title">
-            The perfect weekend getaway
+            {{latestPost.title}}
           </h2>
           <p class="c-latest-post__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos
-            accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos
-            accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis dignissimos
-            accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur amet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-            dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur
-            amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-            dignissimos accusantium illum? Aut assumenda odio qui nobis ipsum laboriosam, labore vero! Minima ipsum consequuntur
-            amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa expedita mollitia dolorum perspiciatis
-            dignissimos
+            {{latestPost.brief}}
           </p>
         </router-link>
       </div>
@@ -39,7 +28,10 @@
     },
     computed: {
       latestPost() {
-         return this.$store.state.allPosts;
+        let categoryPosts = this.$store.getters.sortedAllPosts.filter(post => 
+          post.category === this.category || this.category == null
+        );
+        return categoryPosts[categoryPosts.length - 1]
       }
     }
   }

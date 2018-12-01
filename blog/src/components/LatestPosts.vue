@@ -1,6 +1,6 @@
 <template>
     <div>
-        <latest-post></latest-post>
+        <latest-post :category="category"></latest-post>
         <newsletter></newsletter>
         <latest-posts-list></latest-posts-list>
     </div>
