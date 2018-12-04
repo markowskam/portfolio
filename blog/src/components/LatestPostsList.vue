@@ -2,7 +2,7 @@
     <div class="o-container o-container--fluid">
         <div class="o-grid-row" v-for="(postPair, index) in latestPostsPairs" :key="index">
             <div class="o-grid-row__item o-grid-row__item--half" v-for="latestPost in postPair" :key="latestPost.id">
-                <article class="c-latest-post">
+                <article class="c-latest-post o-theme" :class="theme + latestPost.category">
                     <div class="c-latest-post__img-box">
                         <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
                     </div>
@@ -29,6 +29,11 @@
             category: {
                 type: String,
                 default: null
+            }
+        },
+        data() {
+            return {
+                theme: "o-theme--"
             }
         },
         computed: {

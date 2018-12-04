@@ -1,5 +1,5 @@
 <template>
-    <div class="c-newsletter">
+    <div class="c-newsletter o-theme" :class="theme + category">
         <div class="c-newsletter__content o-flex o-flex--column">
             <div class="c-newsletter__text">
                 Sign up for our newsletter!
@@ -14,6 +14,16 @@
 
 <script>
     export default {
+        props: {
+            category: {
+                type: String
+            }
+        },
+        data(){
+            return {
+                theme: "o-theme--"
+            }
+        }
 
     }
 </script>  

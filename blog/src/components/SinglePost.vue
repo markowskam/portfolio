@@ -1,7 +1,7 @@
 <template>
-    <article class="c-latest-post" v-if="singlePost">
+    <article class="c-latest-post o-theme" :class="theme" v-if="singlePost">
         <div class="o-container o-container--fluid">
-            <img class="c-latest-post__img" src="../assets/img/lifestyle_lazy_1.jpg" alt="">
+            <img class="c-latest-post__img" src="../assets/img/architecture_Singapore_2.jpg" alt="">
         </div>
         <div class="o-container o-container--fluid">
             <div class="o-grid-row">
@@ -12,7 +12,7 @@
                     <h2 class="c-latest-post__title">
                        {{singlePost.title}}
                     </h2>
-                    <p class="c-latest-post__text">
+                    <p class="c-latest-post__text c-latest-post__text--brief">
                         {{singlePost.brief}}
                     </p>
                     <p class="c-latest-post__text">
@@ -45,6 +45,9 @@
         computed: {
             singlePost() {
                 return this.$store.state.allPosts.find(post => post.id === this.id);
+            },
+            theme(){
+                 return "o-theme--" + this.$store.state.allPosts.find(post => post.id === this.id).category;
             }
         }
 

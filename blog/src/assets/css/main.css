@@ -177,6 +177,78 @@ a {
   .o-flex--stretch {
     align-items: stretch; }
 
+.o-theme--lifestyle .c-latest-post__category {
+  color: #b4ad9e; }
+
+.o-theme--lifestyle .c-latest-post__img-box {
+  background-color: #b4ad9e; }
+
+.o-theme--lifestyle .c-about-me__title {
+  color: #b4ad9e; }
+
+.o-theme--lifestyle .c-about-me .c-social-icons__icon {
+  color: #b4ad9e; }
+  .o-theme--lifestyle .c-about-me .c-social-icons__icon:hover {
+    background-color: #b4ad9e;
+    color: #fff; }
+
+.o-theme--lifestyle .c-top-posts {
+  background-color: rgba(180, 173, 158, 0.2); }
+
+.o-theme--lifestyle .c-add-comment__nick:focus, .o-theme--lifestyle .c-add-comment__comment:focus {
+  border: 1px solid #626262;
+  background-color: rgba(180, 173, 158, 0.2); }
+
+.o-theme--lifestyle .c-add-comment .c-button {
+  color: #b4ad9e;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  color: #a9a9a9; }
+  .o-theme--lifestyle .c-add-comment .c-button:hover {
+    background-color: rgba(180, 173, 158, 0.4);
+    cursor: pointer;
+    border-color: black;
+    color: black; }
+
+.o-theme--lifestyle.c-newsletter {
+  background-color: rgba(180, 173, 158, 0.2); }
+
+.o-theme--architecture .c-latest-post__category {
+  color: #51bba4; }
+
+.o-theme--architecture .c-latest-post__img-box {
+  background-color: #51bba4; }
+
+.o-theme--architecture .c-about-me__title {
+  color: #51bba4; }
+
+.o-theme--architecture .c-about-me .c-social-icons__icon {
+  color: #51bba4; }
+  .o-theme--architecture .c-about-me .c-social-icons__icon:hover {
+    background-color: #51bba4;
+    color: #fff; }
+
+.o-theme--architecture .c-top-posts {
+  background-color: rgba(81, 187, 164, 0.2); }
+
+.o-theme--architecture .c-add-comment__nick:focus, .o-theme--architecture .c-add-comment__comment:focus {
+  border: 1px solid #626262;
+  background-color: rgba(81, 187, 164, 0.2); }
+
+.o-theme--architecture .c-add-comment .c-button {
+  color: #b4ad9e;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  color: #a9a9a9; }
+  .o-theme--architecture .c-add-comment .c-button:hover {
+    background-color: rgba(81, 187, 164, 0.4);
+    cursor: pointer;
+    border-color: black;
+    color: black; }
+
+.o-theme--architecture.c-newsletter {
+  background-color: rgba(81, 187, 164, 0.2); }
+
 .c-button {
   background-color: #626262;
   padding: 5px 0.9375rem;

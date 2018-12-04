@@ -1,5 +1,5 @@
 <template>
-  <article class="c-latest-post" v-if="latestPost">
+  <article class="c-latest-post o-theme" :class="theme + latestPost.category" v-if="latestPost">
     <div class="o-container">
       <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
     </div>
@@ -25,6 +25,11 @@
       category: {
         type: String,
         default: null
+      }
+    },
+    data(){
+      return {
+        theme: "o-theme--"
       }
     },
     computed: {
