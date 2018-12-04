@@ -18,10 +18,10 @@
             'newsletter': Newsletter
         },
         props: {
-      category: {
-        type: String,
-        default: null
-      }
+            category: {
+                type: String,
+                default: null
+            }
         }
     }
 </script>

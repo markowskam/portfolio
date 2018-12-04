@@ -19,9 +19,7 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
-
     </header>
 </template>
 

@@ -33,6 +33,9 @@
     }
     &__text { 
       padding-bottom: calculateRem(map-get($space, xs));
+      &--brief {
+          font-style: italic;
+      }
     }
 }
 

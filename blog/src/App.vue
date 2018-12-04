@@ -17,13 +17,13 @@
             <div class="c-footer__social-media o-flex">
               <div class="c-footer__text">Follow</div>
               <div class="c-social-icons o-flex">
-                <a href="" class="c-social-icons__icon">
+                <a href="#" class="c-social-icons__icon">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="c-social-icons__icon">
+                <a href="#" class="c-social-icons__icon">
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="c-social-icons__icon">
+                <a href="#" class="c-social-icons__icon">
                   <i class="fab fa-pinterest-p"></i>
                 </a>
               </div>

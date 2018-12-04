@@ -5,14 +5,12 @@
     </div>
     <div class="o-container o-container--fluid">
       <div class="c-latest-post__content">
-        <a href="" class="c-latest-post__category">
-          {{latestPost.category}}
-        </a>
+        <router-link :to="`/posts/${latestPost.category}`" class="c-latest-post__category">{{latestPost.category}}</router-link>
         <router-link :to="`/post/${latestPost.id}`">
           <h2 class="c-latest-post__title">
             {{latestPost.title}}
           </h2>
-          <p class="c-latest-post__text">
+          <p class="c-latest-post__text c-latest-post__text--brief">
             {{latestPost.brief}}
           </p>
         </router-link>

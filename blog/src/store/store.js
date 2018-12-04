@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-//import * as firebase from 'firebase'
 
 Vue.use(Vuex);
 
@@ -14,9 +13,7 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
-        fetchAllPosts({
-            commit
-        }) {
+        fetchAllPosts({commit}) {
             return new Promise((resolve) => {
                 Vue.http.get("https://portfolio-blog-c7083.firebaseio.com/posts.json")
                     .then((response) => {

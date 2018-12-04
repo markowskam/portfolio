@@ -250,6 +250,8 @@ a {
     font-size: 1.875rem; }
   .c-latest-post__text {
     padding-bottom: 2.5rem; }
+    .c-latest-post__text--brief {
+      font-style: italic; }
 
 .c-newsletter {
   background-color: #f0f0f0;
