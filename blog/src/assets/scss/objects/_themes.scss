@@ -1,5 +1,5 @@
 .o-theme {
-    &--lifestyle {
+    &--fashion {
         .c-latest-post {
             &__category {
                 color: #b4ad9e;
@@ -43,7 +43,7 @@
             }
         }
     }
-    &--lifestyle.c-newsletter {
+    &--fashion.c-newsletter {
         background-color: rgba(180, 173, 158, 0.2);
     }
     &--architecture {
@@ -93,5 +93,52 @@
     }
     &--architecture.c-newsletter {
         background-color: rgba(81, 187, 164, 0.2);
+    }
+    &--lifestyle {
+        .c-latest-post {
+            &__category {
+                color: #626262;
+            }
+            &__img-box {
+                background-color: #626262;
+            }
+        }
+        .c-about-me {
+            &__title {
+                color: #626262;
+            }
+            .c-social-icons__icon {
+                color: #626262;
+                &:hover {
+                    background-color: #626262;
+                    color: #fff;
+                }
+            }
+        }
+        .c-top-posts {
+            background-color: rgba(98, 98, 98, 0.2);
+        } 
+        .c-add-comment {
+            &__nick:focus,
+            &__comment:focus {
+                border: 1px solid #626262;
+                background-color: rgba(98, 98, 98, 0.2);
+            }
+            .c-button {
+                color: #626262;
+                background-color: #fff;
+                border: 1px solid #a9a9a9;
+                color: #a9a9a9;
+                &:hover{
+                    background-color: rgba(98, 98,98, 0.4);
+                    cursor: pointer;
+                    border-color: black;
+                    color: black;
+                }
+            }
+        }
+    }
+    &--lifestyle.c-newsletter {
+        background-color: rgba(180, 173, 158, 0.2);
     }
 } 

@@ -4,7 +4,7 @@
             <div class="o-grid-row__item o-grid-row__item--half" v-for="latestPost in postPair" :key="latestPost.id">
                 <article class="c-latest-post o-theme" :class="theme + latestPost.category">
                     <div class="c-latest-post__img-box">
-                        <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
+                        <img class="c-latest-post__img" :src="latestPost.img1" alt="">
                     </div>
                     <div class="c-latest-post__content">
                         <router-link :to="`/posts/${latestPost.category}`" class="c-latest-post__category">{{latestPost.category}}</router-link>

@@ -1,7 +1,7 @@
 <template>
     <article class="c-latest-post o-theme" :class="theme" v-if="singlePost">
         <div class="o-container o-container--fluid">
-            <img class="c-latest-post__img" src="../assets/img/architecture_Singapore_2.jpg" alt="">
+            <img class="c-latest-post__img" :src="singlePost.img2" alt="">
         </div>
         <div class="o-container o-container--fluid">
             <div class="o-grid-row">

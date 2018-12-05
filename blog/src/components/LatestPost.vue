@@ -1,7 +1,7 @@
 <template>
   <article class="c-latest-post o-theme" :class="theme + latestPost.category" v-if="latestPost">
     <div class="o-container">
-      <img class="c-latest-post__img" src="../assets/img/front.jpg" alt="">
+      <img class="c-latest-post__img" :src="latestPost.img1" alt="">
     </div>
     <div class="o-container o-container--fluid">
       <div class="c-latest-post__content">
