@@ -29,6 +29,11 @@
                 border: 1px solid #626262;
                 background-color: rgba(180, 173, 158, 0.2);
             }
+            &__add-comment {
+                &:hover {
+                    color: #b4ad9e; 
+                }
+            }
             .c-button {
                 color: #b4ad9e;
                 background-color: #fff;
@@ -75,6 +80,11 @@
                 &__comment:focus {
                     border: 1px solid #626262;
                     background-color: rgba(81, 187, 164, 0.2);
+                }
+                &__add-comment {
+                    &:hover {
+                        color: #51bba4; 
+                    }
                 }
                 .c-button { 
                     color: #b4ad9e;
@@ -123,6 +133,11 @@
             &__comment:focus {
                 border: 1px solid #626262;
                 background-color: rgba(98, 98, 98, 0.2);
+            }
+            &__add-comment {
+                &:hover {
+                    color: #626262; 
+                }
             }
             .c-button {
                 color: #626262;

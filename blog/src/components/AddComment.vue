@@ -1,7 +1,7 @@
 <template>
      <div class="c-add-comment">
-            <a href="" class="c-add-comment__link">Add a comment</a>
-            <form action="" class="c-add-comment__form o-flex o-flex--column o-flex--left">
+            <button class="c-add-comment__add-comment" @click="toggle">Add a comment</button>
+            <form action="" class="c-add-comment__form o-flex o-flex--column o-flex--left" v-if="clicked">
                 <input type="text" class="c-add-comment__nick" placeholder="Your nick"/>
                 <textarea class="c-add-comment__comment" name="" id="" cols="30" rows="10" placeholder="Add comment">
                 </textarea> 
@@ -11,6 +11,16 @@
 </template>
 <script>
 export default {
+    data() {
+        return {
+            clicked: false
+        }
+    },
+    methods: {
+        toggle() {
+            this.clicked = true;
+        }
+    }
     
 }
 </script>

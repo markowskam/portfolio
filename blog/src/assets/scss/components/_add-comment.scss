@@ -1,8 +1,11 @@
 .c-add-comment {
-    &__link {
+    &__add-comment {
         letter-spacing: calculateRem(.75px);
         margin-bottom: calculateRem(map-get($space, xxxs));
-        display: inline-block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: calculateRem(map-get($font, s));
     }
     &__comment{
         width: 100%;
@@ -26,4 +29,4 @@
         right: 0;
         bottom: calculateRem(map-get($space, xxxs));
     }
-} 
+}  

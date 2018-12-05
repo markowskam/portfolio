@@ -199,6 +199,9 @@ a {
   border: 1px solid #626262;
   background-color: rgba(180, 173, 158, 0.2); }
 
+.o-theme--fashion .c-add-comment__add-comment:hover {
+  color: #b4ad9e; }
+
 .o-theme--fashion .c-add-comment .c-button {
   color: #b4ad9e;
   background-color: #fff;
@@ -235,6 +238,9 @@ a {
   border: 1px solid #626262;
   background-color: rgba(81, 187, 164, 0.2); }
 
+.o-theme--architecture .c-add-comment__add-comment:hover {
+  color: #51bba4; }
+
 .o-theme--architecture .c-add-comment .c-button {
   color: #b4ad9e;
   background-color: #fff;
@@ -270,6 +276,9 @@ a {
 .o-theme--lifestyle .c-add-comment__nick:focus, .o-theme--lifestyle .c-add-comment__comment:focus {
   border: 1px solid #626262;
   background-color: rgba(98, 98, 98, 0.2); }
+
+.o-theme--lifestyle .c-add-comment__add-comment:hover {
+  color: #626262; }
 
 .o-theme--lifestyle .c-add-comment .c-button {
   color: #626262;
@@ -440,10 +449,13 @@ a {
   .c-comment__name {
     font-weight: bold; }
 
-.c-add-comment__link {
+.c-add-comment__add-comment {
   letter-spacing: 0.04688rem;
   margin-bottom: 0.9375rem;
-  display: inline-block; }
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.875rem; }
 
 .c-add-comment__comment {
   width: 100%;
