@@ -5,11 +5,17 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
     state: {
-        allPosts: []
+        allPosts: [],
     },
     mutations: {
         FETCH_ALL_POSTS(state, latestPosts) {
             state.allPosts = latestPosts;
+        },
+        UPDATE_COMMENTS(state, payload){
+            let id = payload.postId;
+            let newComment = payload.newComment;
+            state.allPosts.find(post =>
+            post.id === id).comments.push(newComment);
         }
     },
     actions: {
@@ -25,6 +31,9 @@ export const store = new Vuex.Store({
                         //console.log(error.statusText);
                     }));
             });
+        },
+        updateComments({commit}, payload) {
+            commit('UPDATE_COMMENTS', payload);
         }
     },
     getters: {

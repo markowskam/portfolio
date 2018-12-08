@@ -6,6 +6,9 @@
         background-color: transparent;
         cursor: pointer;
         font-size: calculateRem(map-get($font, s));
+        font-family: $secondaryFont;
+        outline-width: 0;
+        padding-left: 0;
     }
     &__comment{
         width: 100%;
@@ -28,5 +31,9 @@
         position: absolute;
         right: 0;
         bottom: calculateRem(map-get($space, xxxs));
+    }
+    &__thanks {
+        font-family: $secondaryFont;
+        letter-spacing: calculateRem(.75px);
     }
 }  

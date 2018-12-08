@@ -1,5 +1,5 @@
 <template>
-    <article class="c-latest-post o-theme" :class="theme" v-if="singlePost">
+    <article class="c-latest-post o-theme" :class="theme" v-if="singlePost" >
         <div class="o-container o-container--fluid">
             <img class="c-latest-post__img" :src="singlePost.img2" alt="">
         </div>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <top-posts></top-posts>
-        <comments></comments>
+        <comments :postId="id"></comments>
     </article>
 </template>
 
@@ -50,6 +50,5 @@
                  return "o-theme--" + this.$store.state.allPosts.find(post => post.id === this.id).category;
             }
         }
-
     }
 </script>

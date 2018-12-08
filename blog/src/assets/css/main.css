@@ -213,6 +213,9 @@ a {
     border-color: black;
     color: black; }
 
+.o-theme--fashion .c-add-comment__thanks {
+  color: #b4ad9e; }
+
 .o-theme--fashion.c-newsletter {
   background-color: rgba(180, 173, 158, 0.2); }
 
@@ -252,6 +255,9 @@ a {
     border-color: black;
     color: black; }
 
+.o-theme--architecture .c-add-comment__thanks {
+  color: #51bba4; }
+
 .o-theme--architecture.c-newsletter {
   background-color: rgba(81, 187, 164, 0.2); }
 
@@ -290,6 +296,9 @@ a {
     cursor: pointer;
     border-color: black;
     color: black; }
+
+.o-theme--lifestyle .c-add-comment__thanks {
+  color: #626262; }
 
 .o-theme--lifestyle.c-newsletter {
   background-color: rgba(180, 173, 158, 0.2); }
@@ -440,7 +449,8 @@ a {
   .c-comments__header {
     font-family: "Ubuntu", sans-serif;
     font-size: 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-bottom: 2.1875rem; }
 
 .c-comment {
   padding: 2.5rem 0; }
@@ -455,7 +465,10 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  font-family: "Ubuntu", sans-serif;
+  outline-width: 0;
+  padding-left: 0; }
 
 .c-add-comment__comment {
   width: 100%;
@@ -488,6 +501,10 @@ a {
   position: absolute;
   right: 0;
   bottom: 0.9375rem; }
+
+.c-add-comment__thanks {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.04688rem; }
 
 .c-footer {
   height: 6.25rem;

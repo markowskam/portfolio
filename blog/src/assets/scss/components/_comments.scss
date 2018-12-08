@@ -4,5 +4,6 @@
         font-family: $secondaryFont;
         font-size: calculateRem(map-get($font, m));
         text-transform: uppercase;
+        padding-bottom: calculateRem(map-get($space, xxs));
     }
 }   
