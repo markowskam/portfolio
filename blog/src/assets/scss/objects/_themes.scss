@@ -2,167 +2,167 @@
     &--fashion {
         .c-latest-post {
             &__category {
-                color: #b4ad9e;
+                color: $fashionTheme;
             }
             &__img-box {
-                background-color: #b4ad9e;
+                background-color: $fashionTheme;
             }
         }
         .c-about-me {
             &__title {
-                color: #b4ad9e;
+                color: $fashionTheme;
             }
             .c-social-icons__icon {
-                color: #b4ad9e;
+                color: $fashionTheme;
                 &:hover {
-                    background-color: #b4ad9e;
+                    background-color: $fashionTheme;
                     color: #fff;
                 }
             }
         }
         .c-top-posts {
-            background-color: rgba(180, 173, 158, 0.2);
+            background-color: rgba($fashionTheme, $alpha2);
         }
         .c-add-comment {
             &__nick:focus,
             &__comment:focus {
-                border: 1px solid #626262;
-                background-color: rgba(180, 173, 158, 0.2);
+                border: 1px solid $lifestyleTheme;
+                background-color: rgba($fashionTheme, $alpha2);
             }
             &__add-comment {
                 &:hover {
-                    color: #b4ad9e; 
+                    color: $fashionTheme; 
                 }
             }
             .c-button {
-                color: #b4ad9e;
+                color: $fashionTheme;
                 background-color: #fff;
                 border: 1px solid #a9a9a9;
                 color: #a9a9a9;
                 &:hover{
-                    background-color: rgba(180, 173, 158, 0.4);
+                    background-color: rgba($fashionTheme, $alpha4);
                     cursor: pointer;
                     border-color: black;
                     color: black;
                 }
             }
             &__thanks {
-                color: #b4ad9e;
+                color: $fashionTheme;
             }
         }
     }
     &--fashion.c-newsletter {
-        background-color: rgba(180, 173, 158, 0.2);
+        background-color: rgba($fashionTheme, $alpha2);
     }
     &--architecture {
             .c-latest-post {
                 &__category {
-                    color: #51bba4;
+                    color: $architectureTheme;
                 }
                 &__img-box {
-                    background-color: #51bba4;
+                    background-color: $architectureTheme;
                 }
             }
             .c-about-me {
                 &__title {
-                    color: #51bba4;
+                    color: $architectureTheme;
                 }
                 .c-social-icons__icon {
-                    color: #51bba4;
+                    color: $architectureTheme;
                     &:hover {
-                        background-color: #51bba4;
+                        background-color: $architectureTheme;
                         color: #fff;
                     }
                 }
             }
             .c-top-posts {
-                background-color: rgba(81, 187, 164, 0.2);
+                background-color: rgba($architectureTheme, $alpha2);
             }
             .c-add-comment {
                 &__nick:focus,
                 &__comment:focus {
-                    border: 1px solid #626262;
-                    background-color: rgba(81, 187, 164, 0.2);
+                    border: 1px solid $lifestyleTheme;
+                    background-color: rgba($architectureTheme, $alpha2);
                 }
                 &__add-comment {
                     &:hover {
-                        color: #51bba4; 
+                        color: $architectureTheme; 
                     }
                 }
                 .c-button { 
-                    color: #b4ad9e;
+                    color: $fashionTheme;
                     background-color: #fff;
                     border: 1px solid #a9a9a9;
                     color: #a9a9a9;
                     &:hover{
-                        background-color: rgba(81, 187, 164, 0.4);
+                        background-color: rgba($architectureTheme, $alpha4);
                         cursor: pointer;
                         border-color: black;
                         color: black;
                     }
                 }
                 &__thanks {
-                    color: #51bba4;
+                    color: $architectureTheme;
                 }
             }
             
     }
     &--architecture.c-newsletter {
-        background-color: rgba(81, 187, 164, 0.2);
+        background-color: rgba($architectureTheme, $alpha2);
     }
     &--lifestyle {
         .c-latest-post {
             &__category {
-                color: #626262;
+                color: $lifestyleTheme;
             }
             &__img-box {
-                background-color: #626262;
+                background-color: $lifestyleTheme;
             }
         }
         .c-about-me {
             &__title {
-                color: #626262;
+                color: $lifestyleTheme;
             }
             .c-social-icons__icon {
-                color: #626262;
+                color: $lifestyleTheme;
                 &:hover {
-                    background-color: #626262;
+                    background-color: $lifestyleTheme;
                     color: #fff;
                 }
             }
         }
         .c-top-posts {
-            background-color: rgba(98, 98, 98, 0.2);
+            background-color: rgba($lifestyleTheme, $alpha2);
         } 
         .c-add-comment {
             &__nick:focus,
             &__comment:focus {
-                border: 1px solid #626262;
-                background-color: rgba(98, 98, 98, 0.2);
+                border: 1px solid $lifestyleTheme;
+                background-color: rgba($lifestyleTheme, $alpha2);
             }
             &__add-comment {
                 &:hover {
-                    color: #626262; 
+                    color: $lifestyleTheme; 
                 }
             }
             .c-button {
-                color: #626262;
+                color: $lifestyleTheme;
                 background-color: #fff;
                 border: 1px solid #a9a9a9;
                 color: #a9a9a9;
                 &:hover{
-                    background-color: rgba(98, 98,98, 0.4);
+                    background-color: rgba($lifestyleTheme, $alpha4);
                     cursor: pointer;
                     border-color: black;
                     color: black;
                 }
             }
             &__thanks {
-                color: #626262;
+                color: $lifestyleTheme;
             }
         }
     }
     &--lifestyle.c-newsletter {
-        background-color: rgba(180, 173, 158, 0.2);
+        background-color: rgba($lifestyleTheme, $alpha2);
     }
 } 

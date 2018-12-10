@@ -23,41 +23,14 @@ $font: (
 /********** 
 * Colors *
 **********/
-$baseColors: (
-"main": (
-    #626262
-    #b4ad9e 
-),
-"sub": (
-   
-),
-"func": (
-    #fff
-    #f0f0f0
-    #333333
-    #000
-)
-); 
 
-$useColors: (
-"font" : (
-color-var(main),
-color-var(main,2),
+$lifestyleTheme:#626262;
+$fashionTheme: #b4ad9e; 
+$architectureTheme: #51bba4;
 
-),
-"bg" : (
-
-
-), 
-"border" : (
-
-
-),
-"icon" : (
-
-)
-);
-
+$alpha2: 0.2;
+$alpha4: 0.4;
+ 
 /************ 
 * Spacings *
 ************/
