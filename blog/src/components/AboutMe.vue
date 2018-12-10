@@ -28,6 +28,16 @@
         // components: {
         //     'banner': Banner
         // }
+        props: {
+            postId: {
+                type: Number
+            }
+        },
+        computed: {
+            postCategory() {
+                return this.$store.state.allPosts.find(post => post.id === this.postId).category;
+            }
+        }
     }
 </script>
 

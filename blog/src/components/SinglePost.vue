@@ -19,7 +19,7 @@
                         {{singlePost.text}}
                     </p>
                 </div>
-                <about-me></about-me>
+                <about-me :postId="id"></about-me>
             </div>
         </div>
         <top-posts></top-posts>
