@@ -22,7 +22,7 @@
                 <about-me :postId="id"></about-me>
             </div>
         </div>
-        <top-posts></top-posts>
+        <top-posts :postId="id"></top-posts>
         <comments :postId="id"></comments>
     </article>
 </template>

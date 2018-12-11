@@ -38,7 +38,7 @@ export const store = new Vuex.Store({
     },
     getters: {
         sortedAllPosts(state) {
-            var comparePost = function (a, b) {
+            let comparePost = function (a, b) {
                 return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0);
             }
             return state.allPosts.sort(comparePost);
@@ -46,16 +46,3 @@ export const store = new Vuex.Store({
     }
 
 });
-
-// const createStore = () => {
-
-//     return new Vuex.Store({
-
-//     state: {
-//     data: [],
-//     criterias: [],
-//     selected_criterias: {},
-//     flower_costs: {},
-//     bonus_flower_costs: {},
-//     }
-// })
