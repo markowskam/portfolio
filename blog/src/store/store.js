@@ -14,6 +14,8 @@ export const store = new Vuex.Store({
         UPDATE_COMMENTS(state, payload){
             let id = payload.postId;
             let newComment = payload.newComment;
+            alert(state.allPosts.find(post =>
+                post.id === id).id);
             state.allPosts.find(post =>
             post.id === id).comments.push(newComment);
         }
