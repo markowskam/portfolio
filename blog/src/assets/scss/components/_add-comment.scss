@@ -1,7 +1,7 @@
 .c-add-comment {
     &__add-comment {
         letter-spacing: calculateRem(.75px);
-        margin-bottom: calculateRem(map-get($space, xxxs));
+        margin-top: calculateRem(map-get($space, xxxs));
         border: none;
         background-color: transparent;
         cursor: pointer;

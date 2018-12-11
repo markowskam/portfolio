@@ -2,7 +2,7 @@
     <div class="c-comments">
         <div class="o-container o-container--fluid">
             <div class="c-comments__header">
-                <span class="c-comments__number">2</span>
+                <span class="c-comments__number">{{commentsNumber}}</span>
                 <span> comments</span>
             </div>
             <comment v-for="(postComment, index) in postComments" :key="index" :postComment="postComment"></comment>
@@ -30,6 +30,11 @@
                 var posts = this.$store.state.allPosts.filter(post =>
                post.id === this.postId);
               return posts.length > 0 ? posts[0].comments : [];
+            },
+            commentsNumber() {
+                var posts = this.$store.state.allPosts.filter(post =>
+               post.id === this.postId);
+              return posts.length > 0 ? posts[0].comments.length : [];
             }
         }
     }

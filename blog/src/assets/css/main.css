@@ -454,14 +454,12 @@ a {
 
 .c-comment {
   padding: 2.5rem 0; }
-  .c-comment__content {
-    padding-bottom: 4.0625rem; }
   .c-comment__name {
     font-weight: bold; }
 
 .c-add-comment__add-comment {
   letter-spacing: 0.04688rem;
-  margin-bottom: 0.9375rem;
+  margin-top: 0.9375rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
