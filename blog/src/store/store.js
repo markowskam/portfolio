@@ -17,13 +17,8 @@ export const store = new Vuex.Store({
             let post = state.allPosts.find(post =>
             post.id === id);
             if (post.comments === undefined) {
-                // typeOf(post.comments) == ;
-                // Object.assign({comments: []}, post)
-                // post.comments = [];
-                Object.defineProperty(post, "comments", {value: []});
-                // post.comments=Array(0);
+                post.comments = [];    
             }
-            alert(post.comments);
             post.comments.push(newComment);
         }
     },
@@ -37,7 +32,6 @@ export const store = new Vuex.Store({
                     })
                     .catch((error => {
                         alert(error.statusText);
-                        //console.log(error.statusText);
                     }));
             });
         },
