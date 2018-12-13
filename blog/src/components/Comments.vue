@@ -32,7 +32,7 @@
               return post && post.comments ? post.comments : [];
             },
             commentsNumber() {
-                var post = this.$store.state.allPosts.filter(p =>
+                var post = this.$store.state.allPosts.find(p =>
                p.id === this.postId);
               return post && post.comments ? post.comments.length : 0;
             }

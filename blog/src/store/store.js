@@ -14,8 +14,17 @@ export const store = new Vuex.Store({
         UPDATE_COMMENTS(state, payload){
             let id = payload.postId;
             let newComment = payload.newComment;
-            state.allPosts.find(post =>
-            post.id === id).comments.push(newComment);
+            let post = state.allPosts.find(post =>
+            post.id === id);
+            if (post.comments === undefined) {
+                // typeOf(post.comments) == ;
+                // Object.assign({comments: []}, post)
+                // post.comments = [];
+                Object.defineProperty(post, "comments", {value: []});
+                // post.comments=Array(0);
+            }
+            alert(post.comments);
+            post.comments.push(newComment);
         }
     },
     actions: {
